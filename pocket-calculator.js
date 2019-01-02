@@ -5,7 +5,7 @@ const calculator = {
   firstOperand: null,
   waitingForSecondOperand: false,
   operator: null,
-};
+}
 
 function number0{
   displayValue: '0';
@@ -47,9 +47,9 @@ function number9{
 }
 
 
-$("#opp").click(function(opposite){
+function opposite{
    var b=document.getElementById("output");
-   var n=b.value;
-   n = n * -1;
-   b.value = n; // assign the value of n back to the output
-});
+   var n1=b;
+   n2 = n1 * -1;
+   b.value = n2; // assign the value of n back to the output
+}
