@@ -46,9 +46,25 @@ function number9{
   displayValue: '9';
 }
 
+function addition{
+  var sum=document.getElementById("output+");
+  var
+}
+
+function subtraction{
+
+}
+
+function multiplication{
+
+}
+
+function division{
+
+}
 
 function opposite{
-   var b=document.getElementById("output");
+   var b=document.getElementById("output+/-");
    var n1=b;
    n2 = n1 * -1;
    b.value = n2; // assign the value of n back to the output
