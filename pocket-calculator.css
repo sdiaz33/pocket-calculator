@@ -1,9 +1,51 @@
-/*this is where you'll style elements of the calculator*/
-
 * {
-  font-color: black;
+  font-family: sans-serif;
 }
 
-table {
-  
+h1 {
+  font-size: 10;
+  font-weight: bold;
+  color: purple;
+}
+
+body {
+  font: normal;
+}
+
+.table1 {
+  border-color: black;
+  border-width: 1;
+}
+
+#row1 {
+  background-color: blue;
+}
+
+#row2 {
+  background-color: yellow;
+}
+
+#row3 {
+  background-color: orange;
+}
+
+#row4 {
+  background-color: purple;
+}
+
+#row5 {
+  background-color: red;
+}
+
+.footer1 {
+  font-style: normal;
+}
+
+a[href*="https://www.ucvts.tec.nj.us/domain/16#calendar4326/20181009/month"]:hover {
+  color: purple;
+}
+
+a[href*="https://www.ucvts.tec.nj.us/domain/16#calendar4326/20181009/month"]:link {
+  color: skyblue;
+  text-decoration: none;
 }

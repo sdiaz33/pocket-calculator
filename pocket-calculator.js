@@ -8,11 +8,11 @@ const calculator = {
 }
 
 function number0{
-  displayValue: '0';
+  document.getElementById("output0").innerHTML = ("0");
 }
 
 function number1{
-  displayValue: '1';
+  document.getElementById("output1").innerHTML = ("1");
 }
 
 function number2{
