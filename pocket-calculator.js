@@ -1,5 +1,15 @@
 /*this is where you'll put function to all of the buttons in the calculator so it fuctions like a calculator*/
 
+let val = 0;
+let valOne;
+let valTwo;
+let pointCount=0;
+let operation;
+let newDigit;
+let notDecimal = true;
+let decimalDigits=0;
+let keepNum=false;
+
 const calculator = {
   defaultValue: '0',
   firstOperand: null,
@@ -7,60 +17,53 @@ const calculator = {
   operator: null,
 }
 
-function number0{
-  document.getElementById("output0").innerHTML = ("0");
+function setup(){
+  operation="";
+  resetVal();
+  show();
 }
 
-function number1{
-  document.getElementById("output1").innerHTML = ("1");
+function show(){
+  let display = document.getElementById("display");
+  display.innerHTML = val;
 }
 
-function number2{
-  displayValue: '2';
+function resetVal(){
+  val = 0;
+  pointCount=0;
+  decimalDigits=0;
+  notDecimal=true;
 }
 
-function number3{
-  displayValue: '3';
-}
-function number4{
-  displayValue: '4';
-}
-
-function number5{
-  displayValue: '5';
-}
-
-function number6{
-  displayValue: '6';
-}
-
-function number7{
-  displayValue: '7';
-}
-
-function number8{
-  displayValue: '8';
+function equals() {
+  val = valOne;
+  valOne = val;
+  if (operation == '+'){
+    val = valOne + valTwo;
+  }
+  if (operation == '-'){
+    val = valOne - valTwo;
+  }
+  if (operation == '*'){
+    val = valOne * valTwo;
+  }
+  if (operation == '/'){
+    val = valOne / valTwo;
+  }
+  show();
 }
 
-function number9{
-  displayValue: '9';
-}
-
-function addition{
-  var sum=document.getElementById("output+");
-  var
-}
-
-function subtraction{
-
-}
-
-function multiplication{
-
-}
-
-function division{
-
+function vals {
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  0
 }
 
 function opposite{
@@ -69,3 +72,43 @@ function opposite{
    n2 = n1 * -1;
    b.value = n2; // assign the value of n back to the output
 }
+
+
+
+// function combinedValue(newDigit) {
+//   // if (!keepVal){
+//   //   resetVal();
+//   // }
+//   if (notDecimal){
+//     val=val*10+newDigit;
+//   } else {
+//     decimalDigits++;
+//     val+=newDigit/Math.pow(10, decimalDigits);
+//   }
+//   show();
+// }
+//
+// function point() {
+//   if (pointCount==0){
+//     notDecimal=false;
+//     show();
+//     display.innerHTML+=".";
+//   } else {
+//     val="ERROR";
+//     show();
+//   }
+//   pointCount++;
+// }
+//
+// function useOperation(op){
+//   operation = op;
+//   valOne = val;
+//   resetVal();
+//   display.innerHTML=op;
+// }
+//
+//
+// function show(){
+//   let display = document.getElementById("display");
+//   display.innerHTML = val;
+// }

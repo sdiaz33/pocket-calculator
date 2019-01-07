@@ -23,10 +23,10 @@
           </tr>
           <tr id="row1">
             <td align="center">
-              <input type="button" value=" AC " id='output1' onclick="clear();" />
-              <input type="button" name="opp" value="+/-" id="output+/-" onclick="opposite();"/>
-              <input type="button" value=" % " id="output%" onclick="percentage();" />
-              <input type="button" value=" / " id="output/" onclick="division();" />
+              <input type="button" value=" AC " id='output1' onclick="reset();" />
+              <input type="button" name="opp" value="+/-" id="output+/-" onclick="opp();"/>
+              <input type="button" value=" % " id="output%" onclick="percent();" />
+              <input type="button" value=" / " id="output/" onclick="divi();" />
             </td>
           </tr>
           <br/>
@@ -35,7 +35,7 @@
               <input type="button" value=" 7 " id='output7' onclick="number7();" />
               <input type="button" value=" 8 " id='output8' onclick="number8();" />
               <input type="button" value=" 9 " id='output9' onclick="number9();" />
-              <input type="button" value=" x " id='outputx' onclick="multiplication();" />
+              <input type="button" value=" x " id='outputx' onclick="multi();" />
             </td>
           </tr>
           <br/>
@@ -44,7 +44,7 @@
               <input type="button" value=" 4 " id='output4' onclick="number4();" />
               <input type="button" value=" 5 " id='output5' onclick="number5();" />
               <input type="button" value=" 6 " id='output6' onclick="number6();" />
-              <input type="button" value=" - " id='output-' onclick="subtraction();" />
+              <input type="button" value=" - " id='output-' onclick="subt();" />
             </td>
           </tr>
           <br/>
@@ -52,15 +52,15 @@
             <td align="center">
               <input type="button" value=" 1 " id='output1' onclick="number1();" />
               <input type="button" value=" 2 " id='output2' onclick="number2();" />
-              <input type="button" value=" 3 " id='output3' onclick="number3 += '3'" />
-              <input type="button" value=" + " id='output+' onclick="addition += '+'" />
+              <input type="button" value=" 3 " id='output3' onclick="number3();" />
+              <input type="button" value=" + " id='output+' onclick="add()" />
             </td>
           </tr>
           <br/>
           <tr id="row5">
             <td align="center">
               <input type="button" value=" 0 " id='output0' onclick="number0();" />
-              <input type="button" value=" . " id='output.' onclick="period();" />
+              <input type="button" value=" . " id='output.' onclick="decimal();" />
               <input type="button" value=" = " id='output=' onclick="equal();" />
             </td>
           </tr>
@@ -70,6 +70,6 @@
   </body>
   <br/>
   <foot class="footer1">
-    <p> © 2019 Sofia Diaz <a href="https://www.ucvts.tec.nj.us/domain/16#calendar4326/20181009/month"> AIT | APCSP </a></p>
+    <p> © 2019 Sofia Diaz <a href="https://www.ucvts.tec.nj.us/domain/16#calendar4326/20181009/month"> AIT</a> | APCSP</p>
   </foot>
 </html>
