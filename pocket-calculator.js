@@ -10,13 +10,11 @@ let notDecimal = true;
 let decimalDigits=0;
 let keepNum=false;
 
-const calculator = {
-  defaultValue: '0',
-  firstOperand: null,
-  waitingForSecondOperand: false,
-  operator: null,
-}
+var values= []
+var decimal= false;
+var x=9;
 
+/*SETUP*/
 function setup(){
   operation="";
   resetVal();
@@ -35,6 +33,22 @@ function resetVal(){
   notDecimal=true;
 }
 
+/*NUMBERS*/
+function button1() {
+ if (values.length<x){
+   values.push(1);
+ }
+ document.getElementById("calc-output").innerHTML=`<span style='color: white;'>${values.join("")}</span>`;
+}
+
+function button2() {
+ if (values.length<x){
+   values.push(2);
+ }
+ document.getElementById("calc-output").innerHTML=`<span style='color: white;'>${values.join("")}</span>`;
+}
+
+/*OPERATIONS*/
 function equals() {
   val = valOne;
   valOne = val;
@@ -51,19 +65,6 @@ function equals() {
     val = valOne / valTwo;
   }
   show();
-}
-
-function vals {
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  0
 }
 
 function opposite{

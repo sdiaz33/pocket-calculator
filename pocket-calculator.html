@@ -15,53 +15,53 @@
     <br/>
     <table>
       <div>
-        <table name="calculator" class="table1">
+        <table name="calculator" class="table">
           <tr>
             <td>
               <input type="text" id="input" placeholder="0" readonly="readonly" name="answer" value="">
             </td>
           </tr>
-          <tr id="row1">
+          <tr class="row1">
             <td align="center">
-              <input type="button" value=" AC " id='output1' onclick="reset();" />
-              <input type="button" name="opp" value="+/-" id="output+/-" onclick="opp();"/>
-              <input type="button" value=" % " id="output%" onclick="percent();" />
-              <input type="button" value=" / " id="output/" onclick="divi();" />
+              <input type="button" value=" AC " id='reset' onclick="reset();" />
+              <input type="button" name="opp" value="+/-" id="opp" onclick="opp();"/>
+              <input type="button" value=" % " id="percent" onclick="percent();" />
+              <input type="button" value=" / " id="divi" onclick="combinedOperations();" />
             </td>
           </tr>
           <br/>
-          <tr id="row2">
+          <tr class="row2">
             <td align="center">
-              <input type="button" value=" 7 " id='output7' onclick="number7();" />
-              <input type="button" value=" 8 " id='output8' onclick="number8();" />
-              <input type="button" value=" 9 " id='output9' onclick="number9();" />
-              <input type="button" value=" x " id='outputx' onclick="multi();" />
+              <input type="button" value=" 7 " id='seven' onclick="combinedNumbers();" />
+              <input type="button" value=" 8 " id='eight' onclick="combinedNumbers();" />
+              <input type="button" value=" 9 " id='nine' onclick="combinedNumbers();" />
+              <input type="button" value=" x " id='multi' onclick="combinedOperations();" />
             </td>
           </tr>
           <br/>
-          <tr id="row3">
+          <tr class="row3">
             <td align="center">
-              <input type="button" value=" 4 " id='output4' onclick="number4();" />
-              <input type="button" value=" 5 " id='output5' onclick="number5();" />
-              <input type="button" value=" 6 " id='output6' onclick="number6();" />
-              <input type="button" value=" - " id='output-' onclick="subt();" />
+              <input type="button" value=" 4 " id='four' onclick="combinedNumbers();" />
+              <input type="button" value=" 5 " id='five' onclick="combinedNumbers();" />
+              <input type="button" value=" 6 " id='six' onclick="combinedNumbers();" />
+              <input type="button" value=" - " id='subt' onclick="combinedOperations();" />
             </td>
           </tr>
           <br/>
-          <tr id="row4">
+          <tr class="row4">
             <td align="center">
-              <input type="button" value=" 1 " id='output1' onclick="number1();" />
-              <input type="button" value=" 2 " id='output2' onclick="number2();" />
-              <input type="button" value=" 3 " id='output3' onclick="number3();" />
-              <input type="button" value=" + " id='output+' onclick="add()" />
+              <input type="button" value=" 1 " id='one' onclick="combinedNumbers();" />
+              <input type="button" value=" 2 " id='two' onclick="combinedNumbers();" />
+              <input type="button" value=" 3 " id='three' onclick="combinedNumbers();" />
+              <input type="button" value=" + " id='add' onclick="combinedOperations()" />
             </td>
           </tr>
           <br/>
-          <tr id="row5">
+          <tr class="row5">
             <td align="center">
-              <input type="button" value=" 0 " id='output0' onclick="number0();" />
-              <input type="button" value=" . " id='output.' onclick="decimal();" />
-              <input type="button" value=" = " id='output=' onclick="equal();" />
+              <input type="button" colspan="2" value=" 0 " id='output0' onclick="combinedNumbers();" />
+              <input type="button" value=" . " id='decimal.' onclick="decimal();" />
+              <input type="button" value=" = " id='equal' onclick="equal();" />
             </td>
           </tr>
         </table>
