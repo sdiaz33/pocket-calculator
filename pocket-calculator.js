@@ -19,43 +19,40 @@ function show(){
 }
 
 function resetVal(){
-  val = 0;
-  pointCount = 0;
-  decimalDigits = 0;
-  notDecimal = true;
+  document.getElementById("input").value= '';
 }
 
 /*NUMBERS*/
-function combinedNumbers() {
-  if (values.length=val){
-    values.push(0);
+function combinedNumbers(num) {
+  if (num === 1){
+    input.value += "1";
   }
-  if (values.length<val){
-   values.push(1);
+  if (num === 2){
+    input.value += "1";
   }
-  if (values.length<val){
-   values.push(2);
+  if (num === 3){
+    input.value += "1"
   }
-  if (values.length<val){
-   values.push(3);
+  if (num === 4){
+    input.value += "1";
   }
-  if (values.length<val){
-   values.push(4);
+  if (num === 5){
+    input.value += "1";
   }
-  if (values.length<val){
-    values.push(5);
+  if (num === 6){
+    input.value += "1";
   }
-  if (values.length<val){
-    values.push(6);
+  if (num === 7){
+    input.value += "1";
   }
-  if (values.length<val){
-     values.push(7);
+  if (num === 8){
+    input.value += "1";
   }
-  if (values.length<val){
-     values.push(8);
+  if (num === 9){
+    input.value += "1";
   }
-  if (values.length<val){
-     values.push(9);
+  if (num === 0){
+    input.value += "1";
   }
  document.getElementById("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine").innerHTML= values;
 }
@@ -79,7 +76,7 @@ function combinedOperations() {
   show();
 }
 
-function opp{
+function opp(){
    var valOpp=document.getElementById("opp");
    var valOne=valOpp;
    valTwo = valOne * -1;

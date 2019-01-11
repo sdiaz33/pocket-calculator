@@ -5,10 +5,10 @@
     <title>Pocket Calculator</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/pocket-calculator.css"/>
+    <link rel="stylesheet" type="text/css" href="pocket-calculator.css"/>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="js/pocket-calculator.js"></script>
+    <script type="text/javascript" src="pocket-calculator.js"></script>
   </head>
   <body>
     <br/>
@@ -25,34 +25,34 @@
               <input type="button" value=" AC " id='reset' onclick="reset();" />
               <input type="button" name="opp" value="+/-" id="opp" onclick="opp();"/>
               <input type="button" value=" % " id="percent" onclick="percent();" />
-              <input type="button" value=" / " id="divi" onclick="combinedOperations();" />
+              <input type="button" value=" / " id="divi" onclick="combinedOperations(/);" />
             </td>
           </tr>
           <br/>
           <tr class="row2">
             <td align="center">
-              <input type="button" value=" 7 " id='seven' onclick="combinedNumbers();" />
-              <input type="button" value=" 8 " id='eight' onclick="combinedNumbers();" />
-              <input type="button" value=" 9 " id='nine' onclick="combinedNumbers();" />
-              <input type="button" value=" x " id='multi' onclick="combinedOperations();" />
+              <input type="button" value=" 7 " id='seven' onclick="combinedNumbers(7);" />
+              <input type="button" value=" 8 " id='eight' onclick="combinedNumbers(8);" />
+              <input type="button" value=" 9 " id='nine' onclick="combinedNumbers(9);" />
+              <input type="button" value=" x " id='multi' onclick="combinedOperations(*);" />
             </td>
           </tr>
           <br/>
           <tr class="row3">
             <td align="center">
-              <input type="button" value=" 4 " id='four' onclick="combinedNumbers();" />
-              <input type="button" value=" 5 " id='five' onclick="combinedNumbers();" />
-              <input type="button" value=" 6 " id='six' onclick="combinedNumbers();" />
-              <input type="button" value=" - " id='subt' onclick="combinedOperations();" />
+              <input type="button" value=" 4 " id='four' onclick="combinedNumbers(4);" />
+              <input type="button" value=" 5 " id='five' onclick="combinedNumbers(5);" />
+              <input type="button" value=" 6 " id='six' onclick="combinedNumbers(6);" />
+              <input type="button" value=" - " id='subt' onclick="combinedOperations(-);" />
             </td>
           </tr>
           <br/>
           <tr class="row4">
             <td align="center">
-              <input type="button" value=" 1 " id='one' onclick="combinedNumbers();" />
-              <input type="button" value=" 2 " id='two' onclick="combinedNumbers();" />
-              <input type="button" value=" 3 " id='three' onclick="combinedNumbers();" />
-              <input type="button" value=" + " id='add' onclick="combinedOperations()" />
+              <input type="button" value=" 1 " id='one' onclick="combinedNumbers(1);" />
+              <input type="button" value=" 2 " id='two' onclick="combinedNumbers(2);" />
+              <input type="button" value=" 3 " id='three' onclick="combinedNumbers(3);" />
+              <input type="button" value=" + " id='add' onclick="combinedOperations(+)" />
             </td>
           </tr>
           <br/>
