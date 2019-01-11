@@ -4,15 +4,7 @@ let val = 0;
 let valOne;
 let valTwo;
 let pointCount=0;
-let operation;
-let newDigit;
-let notDecimal = true;
-let decimalDigits=0;
-let keepNum=false;
-
-var values= []
 var decimal= false;
-var x=9;
 
 /*SETUP*/
 function setup(){
@@ -28,28 +20,48 @@ function show(){
 
 function resetVal(){
   val = 0;
-  pointCount=0;
-  decimalDigits=0;
-  notDecimal=true;
+  pointCount = 0;
+  decimalDigits = 0;
+  notDecimal = true;
 }
 
 /*NUMBERS*/
-function button1() {
- if (values.length<x){
+function combinedNumbers() {
+  if (values.length=val){
+    values.push(0);
+  }
+  if (values.length<val){
    values.push(1);
- }
- document.getElementById("calc-output").innerHTML=`<span style='color: white;'>${values.join("")}</span>`;
-}
-
-function button2() {
- if (values.length<x){
+  }
+  if (values.length<val){
    values.push(2);
- }
- document.getElementById("calc-output").innerHTML=`<span style='color: white;'>${values.join("")}</span>`;
+  }
+  if (values.length<val){
+   values.push(3);
+  }
+  if (values.length<val){
+   values.push(4);
+  }
+  if (values.length<val){
+    values.push(5);
+  }
+  if (values.length<val){
+    values.push(6);
+  }
+  if (values.length<val){
+     values.push(7);
+  }
+  if (values.length<val){
+     values.push(8);
+  }
+  if (values.length<val){
+     values.push(9);
+  }
+ document.getElementById("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine").innerHTML= values;
 }
 
 /*OPERATIONS*/
-function equals() {
+function combinedOperations() {
   val = valOne;
   valOne = val;
   if (operation == '+'){
@@ -67,49 +79,9 @@ function equals() {
   show();
 }
 
-function opposite{
-   var b=document.getElementById("output+/-");
-   var n1=b;
-   n2 = n1 * -1;
-   b.value = n2; // assign the value of n back to the output
+function opp{
+   var valOpp=document.getElementById("opp");
+   var valOne=valOpp;
+   valTwo = valOne * -1;
+   valOpp.value = valTwo; // assign the value of n back to the output
 }
-
-
-
-// function combinedValue(newDigit) {
-//   // if (!keepVal){
-//   //   resetVal();
-//   // }
-//   if (notDecimal){
-//     val=val*10+newDigit;
-//   } else {
-//     decimalDigits++;
-//     val+=newDigit/Math.pow(10, decimalDigits);
-//   }
-//   show();
-// }
-//
-// function point() {
-//   if (pointCount==0){
-//     notDecimal=false;
-//     show();
-//     display.innerHTML+=".";
-//   } else {
-//     val="ERROR";
-//     show();
-//   }
-//   pointCount++;
-// }
-//
-// function useOperation(op){
-//   operation = op;
-//   valOne = val;
-//   resetVal();
-//   display.innerHTML=op;
-// }
-//
-//
-// function show(){
-//   let display = document.getElementById("display");
-//   display.innerHTML = val;
-// }
