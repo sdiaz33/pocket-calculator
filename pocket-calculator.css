@@ -1,43 +1,77 @@
-table, td{
-  border: 25px dashed black;
-  border radius: 15px,25px,35px,45px;
-  background-color: black;
+table{
+  border: 15px solid black;
+  border radius: 10px,10px,10px,10px;
+  background-color: skyblue;
   border-collapse: collapse;
   text-align: center;
 }
 
-button.zero{
-  width:260;
-}
-
-button {
-  background-color: deeppink;
-  padding-right: 10%;
-  display: inline-block;
+#input {
+  border: 10px solid red;
   margin: auto;
-  margin-left: 1%;
-  margin-right:1%;
-  height:3em;
-  width:130px;
-  font: "Comic Sans MS", cursive, sans-serif;
 }
 
-/* .row1 {
-  background-color: blue;
+#button {
+  height:100px;
+  width:100px;
+  font: "Comic Sans MS", emphasis, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  background-color: white;
+  color: violet;
+  padding: 25px;
+  border-color: violet;
+  border-width: thick;
+  border-radius: 50px;
+  margin: 0px;
 }
 
-.row2 {
-  background-color: yellow;
+#button:hover {
+  background-color: violet;
+  color: white;
 }
 
-.row3 {
-  background-color: orange;
+#buttonOperations {
+  height:100px;
+  width:100px;
+  font: "Comic Sans MS", emphasis, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  background-color: gold;
+  color: white;
+  padding: 25px;
+  border-color: #DAA520;
+  border-width: thick;
+  border-radius: 50px;
+  margin: 0px;
 }
 
-.row4 {
-  background-color: purple;
+#buttonOperations:hover {
+  background-color: white;
+  color: gold;
 }
 
-.row5 {
-  background-color: red;
+#buttonTopRow {
+  height:100px;
+  width:100px;
+  font: "Comic Sans MS", emphasis, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  background-color: grey;
+  color: white;
+  padding: 25px;
+  border-color: black;
+  border-width: thick;
+  border-radius: 50px;
+  margin: 0px;
+}
+
+#buttonTopRow:hover {
+  background-color: white;
+  color: grey;
+}
+
+/*want to align last row to right and colspan zero button "2"*/
+/* .row5 {
+  text-align: right;
 } */
