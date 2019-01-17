@@ -17,13 +17,18 @@
         <table name="calculator">
           <tr>
             <td>
+              <h1>Pocket Calculator</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
               <input type="text" id="input" placeholder="0" readonly="readonly" name="answer" value="">
             </td>
           </tr>
           <tr class="row1">
             <td align="center">
               <input type="button" value=" AC " id='buttonTopRow' onclick="reset();" />
-              <input type="button" name="opp" value="+/-" id="buttonTopRow" onclick="opp();"/>
+              <input type="button" name=" opp " value="+/-" id="buttonTopRow" onclick="opp();"/>
               <input type="button" value=" % " id="buttonTopRow" onclick="percent();" />
               <input type="button" value=" / " id="buttonOperations" onclick="combinedOperations(/);" />
             </td>
@@ -52,13 +57,13 @@
               <input type="button" value=" 1 " id='button' onclick="combinedNumbers(1);" />
               <input type="button" value=" 2 " id='button' onclick="combinedNumbers(2);" />
               <input type="button" value=" 3 " id='button' onclick="combinedNumbers(3);" />
-              <input type="button" value=" + " id='buttonOperations' onclick="combinedOperations(+)" />
+              <input type="button" value=" + " id='buttonOperations' onclick="combinedOperations(+);" />
             </td>
           </tr>
           <br/>
           <tr class="row5">
-            <td align="center">
-              <input type="button" colspan="2" value=" 0 " id='button' onclick="combinedNumbers();" />
+            <td align="center" colspan="2">
+              <input type="button" value=" 0 " id='button' onclick="combinedNumbers(0);" />
               <input type="button" value=" . " id='button' onclick="decimal();" />
               <input type="button" value=" = " id='buttonOperations' onclick="equal();" />
             </td>

@@ -19,7 +19,7 @@ function show(){
 }
 
 function resetVal(){
-  document.getElementById("input").value= '';
+  document.getElementById("input").value='';
 }
 
 /*NUMBERS*/
@@ -28,54 +28,54 @@ function combinedNumbers(num) {
     input.value += "1";
   }
   if (num === 2){
-    input.value += "1";
+    input.value += "2";
   }
   if (num === 3){
-    input.value += "1"
+    input.value += "3"
   }
   if (num === 4){
-    input.value += "1";
+    input.value += "4";
   }
   if (num === 5){
-    input.value += "1";
+    input.value += "5";
   }
   if (num === 6){
-    input.value += "1";
+    input.value += "6";
   }
   if (num === 7){
-    input.value += "1";
+    input.value += "7";
   }
   if (num === 8){
-    input.value += "1";
+    input.value += "8";
   }
   if (num === 9){
-    input.value += "1";
+    input.value += "9";
   }
   if (num === 0){
-    input.value += "1";
+    input.value += "0";
   }
- document.getElementById("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine").innerHTML= values;
+ document.getElementById("combinedNumbers(num)");
 }
 
 /*OPERATIONS*/
-function combinedOperations() {
-  val = valOne;
-  valOne = val;
+function combinedOperations(operation) {
   if (operation == '+'){
-    val = valOne + valTwo;
+    eval = num + num;
   }
   if (operation == '-'){
-    val = valOne - valTwo;
+    eval = num - num;
   }
   if (operation == '*'){
-    val = valOne * valTwo;
+    eval = num * num;
   }
   if (operation == '/'){
-    val = valOne / valTwo;
+    eval = num / num;
   }
-  show();
+  // show();
+  document.getElementById("combinedOperations(operation)");
 }
 
+/*OTHER FUNCTIONS*/
 function opp(){
    var valOpp=document.getElementById("opp");
    var valOne=valOpp;

@@ -6,9 +6,19 @@ table{
   text-align: center;
 }
 
+h1{
+  margin-top: 2%;
+  font: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+
 #input {
   border: 10px solid red;
   margin: auto;
+  height: 50px;
+  width: 200px;
+  font-size: 30px;
+  margin-bottom: 5%;
 }
 
 #button {
@@ -71,7 +81,7 @@ table{
   color: grey;
 }
 
-/*want to align last row to right and colspan zero button "2"*/
-/* .row5 {
-  text-align: right;
-} */
+
+.row5 {
+  float: right;
+}
