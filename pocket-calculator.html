@@ -30,7 +30,7 @@
               <input type="button" value=" AC " id='buttonTopRow' onclick="reset();" />
               <input type="button" name=" opp " value="+/-" id="buttonTopRow" onclick="opp();"/>
               <input type="button" value=" % " id="buttonTopRow" onclick="percent();" />
-              <input type="button" value=" / " id="buttonOperations" onclick="combinedOperations(/);" />
+              <input type="button" value=" / " id="buttonOperations" onclick="show('/');" />
             </td>
           </tr>
           <br/>
@@ -39,7 +39,7 @@
               <input type="button" value=" 7 " id='button' onclick="combinedNumbers(7);" />
               <input type="button" value=" 8 " id='button' onclick="combinedNumbers(8);" />
               <input type="button" value=" 9 " id='button' onclick="combinedNumbers(9);" />
-              <input type="button" value=" x " id='buttonOperations' onclick="combinedOperations(*);" />
+              <input type="button" value=" x " id='buttonOperations' onclick="show('*');" />
             </td>
           </tr>
           <br/>
@@ -48,7 +48,7 @@
               <input type="button" value=" 4 " id='button' onclick="combinedNumbers(4);" />
               <input type="button" value=" 5 " id='button' onclick="combinedNumbers(5);" />
               <input type="button" value=" 6 " id='button' onclick="combinedNumbers(6);" />
-              <input type="button" value=" - " id='buttonOperations' onclick="combinedOperations(-);" />
+              <input type="button" value=" - " id='buttonOperations' onclick="show('-');" />
             </td>
           </tr>
           <br/>
@@ -57,14 +57,14 @@
               <input type="button" value=" 1 " id='button' onclick="combinedNumbers(1);" />
               <input type="button" value=" 2 " id='button' onclick="combinedNumbers(2);" />
               <input type="button" value=" 3 " id='button' onclick="combinedNumbers(3);" />
-              <input type="button" value=" + " id='buttonOperations' onclick="combinedOperations(+);" />
+              <input type="button" value=" + " id='buttonOperations' onclick="show('+');" />
             </td>
           </tr>
           <br/>
           <tr class="row5">
-            <td align="center" colspan="2">
+            <td align="center">
               <input type="button" value=" 0 " id='button' onclick="combinedNumbers(0);" />
-              <input type="button" value=" . " id='button' onclick="decimal();" />
+              <input type="button" value=" . " id='button' onclick="show('.');" />
               <input type="button" value=" = " id='buttonOperations' onclick="equals(input.value);" />
             </td>
           </tr>
