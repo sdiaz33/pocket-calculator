@@ -57,11 +57,12 @@ function combinedNumbers(num) {
 }
 
 /*OPERATIONS*/
-function opp(){
-   var valOpp=document.getElementById("opp");
-   var valOne=valOpp;
-   valTwo = valOne * -1;
-   valOpp.value = valTwo; // assign the value of n back to the output
+function percent(val) {
+  document.getElementById("input").value = val / 100;
+}
+
+function opp(val) {
+  document.getElementById("input").value = -val;
 }
 
 function equals(val){
