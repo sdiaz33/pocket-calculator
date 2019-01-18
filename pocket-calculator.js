@@ -82,3 +82,7 @@ function opp(){
    valTwo = valOne * -1;
    valOpp.value = valTwo; // assign the value of n back to the output
 }
+
+function equals(val){
+  document.getElementById("input").value = eval(val);
+}
