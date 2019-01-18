@@ -18,12 +18,17 @@ function show(val){
 }
 
 function resetVal(){
-  document.getElementById("input").placeholder='0';
+  document.getElementById("input").value='0';
 }
 
 /*NUMBERS*/
 function combinedNumbers(num) {
+  if (input.value === "0") {
+      input.value = "";
+  }
+
   if (num === 1){
+    console.log(input);
     input.value += "1";
   }
   if (num === 2){
@@ -70,10 +75,14 @@ function equals(val){
 }
 
 /*OTHER FUNCTIONS*/
-if (num > 999999999){
-    num = num.toExponential();
+function commas{
+  if (num > 999999999){
+      num = num.toExponential();
+  }
 }
 
-if (num === "Infinity"){
-    num = "ERROR";
+function error{
+  if (num === "Infinity"){
+      num = "ERROR";
+  }
 }

@@ -87,6 +87,10 @@ h1{
 
 #signature{
   display: inline-block;
-  font: precious;
+  font: thick;
+  font-family: "Snell Roundhand", cursive;
+  font-style: italic;
   color: black;
+  margin-left: 0px;
+  padding-right: 15px;
 }
