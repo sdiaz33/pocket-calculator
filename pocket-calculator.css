@@ -81,7 +81,12 @@ h1{
   color: grey;
 }
 
-
 .row5 {
   float: right;
+}
+
+#signature{
+  display: inline-block;
+  font: precious;
+  color: black;
 }
