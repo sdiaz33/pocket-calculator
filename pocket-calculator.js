@@ -68,3 +68,12 @@ function opp(val) {
 function equals(val){
   document.getElementById("input").value = eval(val);
 }
+
+/*OTHER FUNCTIONS*/
+if (num > 999999999){
+    num = num.toExponential();
+}
+
+if (num === "Infinity"){
+    num = "ERROR";
+}
