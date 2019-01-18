@@ -18,7 +18,7 @@ function show(val){
 }
 
 function resetVal(){
-  document.getElementById("input").placeholder='';
+  document.getElementById("input").placeholder='0';
 }
 
 /*NUMBERS*/
