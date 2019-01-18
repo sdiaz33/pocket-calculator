@@ -18,7 +18,7 @@ function show(val){
 }
 
 function resetVal(){
-  document.getElementById("input").value='';
+  document.getElementById("input").value='0';
 }
 
 /*NUMBERS*/
@@ -57,24 +57,6 @@ function combinedNumbers(num) {
 }
 
 /*OPERATIONS*/
-function combinedOperations(operation) {
-  if (operation == '+'){
-    eval = num + num;
-  }
-  if (operation == '-'){
-    eval = num - num;
-  }
-  if (operation == '*'){
-    eval = num * num;
-  }
-  if (operation == '/'){
-    eval = num / num;
-  }
-  // show();
-  document.getElementById("combinedOperations(operation)");
-}
-
-/*OTHER FUNCTIONS*/
 function opp(){
    var valOpp=document.getElementById("opp");
    var valOne=valOpp;
