@@ -13,9 +13,8 @@ function setup(){
   show();
 }
 
-function show(){
-  let display = document.getElementById("display");
-  display.innerHTML = val;
+function show(val){
+  document.getElementById("input").value += val;
 }
 
 function resetVal(){
