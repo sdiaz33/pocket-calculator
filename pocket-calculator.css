@@ -87,7 +87,7 @@ h1{
 
 #signature{
   display: inline-block;
-  font: thick;
+  font-size: 15px;
   font-family: "Snell Roundhand", cursive;
   font-style: italic;
   color: black;

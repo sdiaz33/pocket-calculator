@@ -26,9 +26,7 @@ function combinedNumbers(num) {
   if (input.value === "0") {
       input.value = "";
   }
-
   if (num === 1){
-    console.log(input);
     input.value += "1";
   }
   if (num === 2){
@@ -75,14 +73,22 @@ function equals(val){
 }
 
 /*OTHER FUNCTIONS*/
-function commas{
-  if (num > 999999999){
-      num = num.toExponential();
+function scientificNotation(){
+  let numb = "";
+  if (num > 999999999 || num < 0.999999999){
+        numb = num.toExponential();
+  } else{
+    numb = num
   }
+  document.getElementById("input").value = numb;
 }
 
-function error{
-  if (num === "Infinity"){
+function commas(){
+
+}
+
+function error(){
+  if (num === Infinity || num === NaN || num === ERROR){
       num = "ERROR";
   }
 }
