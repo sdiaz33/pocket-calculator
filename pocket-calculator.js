@@ -118,7 +118,7 @@ function commas(){
 }
 
 function error(){
-  if (num === Infinity || num === NaN || num === ERROR){
+  if (num === Infinity || num === NaN || num === undefined){
       num = "ERROR";
   }
 }
