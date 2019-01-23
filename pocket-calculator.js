@@ -5,6 +5,10 @@ let valOne;
 let valTwo;
 let pointCount=0;
 var decimal= false;
+var expressionArray= [];
+var opInserted = false;
+var decimalStatInsert = false;
+var decimalNumInsert = false;
 
 /*SETUP*/
 function setup(){
@@ -73,37 +77,45 @@ function equals(val){
 }
 
 /*OTHER FUNCTIONS*/
-// function scientificNotation(){
-//   let numb = "";
-//   if (num > 999999999 || num < 0.999999999){
-//         numb = num.toExponential();
-//   } else{
-//     numb = num
-//   }
-//   document.getElementById("input").value = numb;
-// }
-
-// function commas(){
-  
-// }
-
-let caclEvaluated= eval(expressionArray.join(''));
+function scientificNotation(){
+  let numEval= eval(expressionArray.join(''));
   if(expressionArray.join(",").includes("e")){
      exponentialAlert = true;
   }
   console.log(exponentialAlert)
 
     expressionArray = [];
-    expressionArray.push(caclEvaluated)
-    console.log("evaluated raw", caclEvaluated)
-  if(caclEvaluated > 999999999 || caclEvaluated < -999999999){
-    document.calc.display.value = caclEvaluated.toExponential(9)
+    expressionArray.push(numEval)
+    console.log("evaluated raw", numEval)
+  if(num > 999999999 || num < -999999999){
+    document.getElementbyId("input").value = numEval.toExponential(9)
   }else{
-    document.calc.display.value=caclEvaluated.toLocaleString("en")
+    document.getElementbyId("input").value=numEval.toLocaleString("en")
   }
   if(exponentialAlert == true){
-    document.calc.display.value = caclEvaluated
+    document.getElementbyId("input").value = numEval;
   }
+}
+
+function commas(){
+  if(opInserted == false){
+    document.calc.display.value = document.calc.display.value + num;
+    expressionArray.push(num)
+      console.log("joined array" , expressionArray.join(''))
+  }
+
+  if(Number(document.calc.display.value.length) <= 10){
+    document.calc.display.value = document.calc.display.value
+  }else{
+    document.getElementById("combinedNumbers(num)").disabled = true;
+    document.getElementById("decimal").disabled = true;
+  }
+  // BREAK //
+  if(decimalNumInsert == false){
+ let commaInput = Number(document.getElementById("input").value.split(",").join("")).toLocaleString();
+ document.getElementById("input").value = commaInput;
+  }
+}
 
 function error(){
   if (num === Infinity || num === NaN || num === ERROR){
