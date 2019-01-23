@@ -73,19 +73,37 @@ function equals(val){
 }
 
 /*OTHER FUNCTIONS*/
-function scientificNotation(){
-  let numb = "";
-  if (num > 999999999 || num < 0.999999999){
-        numb = num.toExponential();
-  } else{
-    numb = num
+// function scientificNotation(){
+//   let numb = "";
+//   if (num > 999999999 || num < 0.999999999){
+//         numb = num.toExponential();
+//   } else{
+//     numb = num
+//   }
+//   document.getElementById("input").value = numb;
+// }
+
+// function commas(){
+  
+// }
+
+let caclEvaluated= eval(expressionArray.join(''));
+  if(expressionArray.join(",").includes("e")){
+     exponentialAlert = true;
   }
-  document.getElementById("input").value = numb;
-}
+  console.log(exponentialAlert)
 
-function commas(){
-
-}
+    expressionArray = [];
+    expressionArray.push(caclEvaluated)
+    console.log("evaluated raw", caclEvaluated)
+  if(caclEvaluated > 999999999 || caclEvaluated < -999999999){
+    document.calc.display.value = caclEvaluated.toExponential(9)
+  }else{
+    document.calc.display.value=caclEvaluated.toLocaleString("en")
+  }
+  if(exponentialAlert == true){
+    document.calc.display.value = caclEvaluated
+  }
 
 function error(){
   if (num === Infinity || num === NaN || num === ERROR){
